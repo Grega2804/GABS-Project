@@ -1,0 +1,28 @@
+ Follow the instructions provided here.
+- You can find examples on the slides of lecture 7. Please note that "pick one of the approaches" does not prevent you from picking an approach that is not in this list, for example solving a methods problem.
+- Follow the provided template.
+- Register your group here before Monday 16th of March.
+- The presentations will be on the 26th - 27th of April, and the presentation slots will be allocated once all groups are registered.
+- Submit a written report (one per group, but provide authoring contributions) by 16th of April, 23:59.
+ 
+ 
+Kuramoto Data
+
+The provided dataset consists of two .npy files with the shape (n_subjects, n_parcels, n_parcels). These are whole-brain virtually completed structural connectomes: completion algorithms are applied to empirical diffusion imaging data to ensure a robust representation of the brain's white matter architecture. In this simulation environment, the Connectome * L parameter serves as the effective weight matrix, mirroring the weight_matrix parameter from Exercise B.
+
+    Alzheimer's connectomes.
+    Healthy Controls connectomes.
+
+For this project, you can use the same kuramoto_course.py from exercise B and your DFA implementation from exercise C, if you need it. For a significant DFA exponent, 10 minute simulations will suffice. Access to a GPU is recommended (use_cuda=True), you can use some Aalto computers or GoogleColab for this.
+
+Clue: explore the parameter space around L=15.0 with K in between 24.0 and 24.5. 
+
+You have creative freedom on how to analyze and explore the provided data. The course staff will be available for you in case you have any questions. 
+
+P.D.: We apologize for the delay in the data publication. As a compensation, you don't have to search for your own data and check its suitability, etc, contrarily to the other approaches. Consider it a head start! :D
+ 
+Presentations scheduling
+
+Below you can find the allocated slots for the presentations. Each presentation should be around 10 minutes so that we have time for everything + questions and/or guidance. You should submit your slides on MyCourses as well.
+
+For whoever hasn't registered even though I opened the registration 3 times... You will do it after the registered groups have presented if there's time left on either of both days.
