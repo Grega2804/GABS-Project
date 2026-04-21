@@ -8,19 +8,153 @@
 \usepackage{hyperref}
 \usepackage{natbib}
 \usepackage{float}
+\usepackage{soul}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{xcolor}
 
-\title{GABs Project}
+% Highlight colour used by Word track-changes style markings
+\sethlcolor{yellow!35}
+
+\title{\textbf{Criticality Regime Shift in Alzheimer's Patients}\\[0.5em]
+  \large PROJECT REPORT\\
+  \normalsize Genesis and Analysis of Brain Signals --- 2026}
 \author{
-  Author 1 \and Author 2 \and Author 3
+  Golbert Valentin Golbert \\ \texttt{104079827}
+  \and
+  Probst David Dominic
+  \and
+  Samonig Gregor
+  \and
+  Julieta Simondi \\ \texttt{\hl{104079966}}
 }
-\date{Genesis and Analysis of Brain Signals --- Aalto University}
+\date{Aalto University}
 
 \begin{document}
 
 \maketitle
 
+\begin{center}
+  % \includegraphics[width=0.35\textwidth]{media/image1.jpg}
+\end{center}
 
-\bibliographystyle{plainnat}
-\bibliography{references}
+\begin{table}[H]
+  \centering
+  \begin{tabular}{@{}p{0.5\textwidth} p{0.35\textwidth}@{}}
+    \toprule
+    \textbf{Author} & \textbf{Student Number} \\
+    \midrule
+    Golbert Valentin Golbert & 104079827 \\
+    Probst David Dominic     &            \\
+    Samonig Gregor           &            \\
+    Julieta Simondi          & \hl{104079966} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+% =====================================================================
+\section*{Abstract}
+\addcontentsline{toc}{section}{Abstract}
+
+% (Abstract to be written.)
+
+% =====================================================================
+\section{Introduction}
+
+% (Introduction to be written.)
+
+% =====================================================================
+\section{Background \& Significance}
+
+\subsection{Alzheimer's Disease}
+
+Alzheimer's disease \hl{(}AD\hl{) is a} \href{https://en.wikipedia.org/wiki/Neurodegenerative_disease}{neurodegenerative disease} \hl{and is the most common form of} \href{https://en.wikipedia.org/wiki/Dementia}{dementia}\hl{, accounting for around 60--70\% of cases. The most common early symptom is difficulty in} \href{https://en.wikipedia.org/wiki/Short-term_memory}{remembering recent events}\hl{. As the disease advances, symptoms can include} \href{https://en.wikipedia.org/wiki/Aphasia}{problems with language}\hl{,} \href{https://en.wikipedia.org/wiki/Orientation_(mental)}{disorientation} \hl{(including easily getting lost),} \href{https://en.wikipedia.org/wiki/Mood_swing}{mood swings}\hl{,} \href{https://en.wikipedia.org/wiki/Apathy}{loss of motivation}\hl{,} \href{https://en.wikipedia.org/wiki/Self-neglect}{self-neglect}\hl{, and} \href{https://en.wikipedia.org/wiki/Challenging_behaviour}{behavioral issues}\hl{.}
+
+\hl{The causes of Alzheimer's disease remain poorly understood. There are many environmental and genetic} \href{https://en.wikipedia.org/wiki/Risk_factor}{risk factors} \hl{associated with its development. The strongest genetic risk factor is from an} \href{https://en.wikipedia.org/wiki/Allele}{allele} \hl{of} \href{https://en.wikipedia.org/wiki/Apolipoprotein_E}{apolipoprotein E}\hl{, a protein involved in the metabolism of fats in} \href{https://en.wikipedia.org/wiki/Mammals}{mammals}\hl{. Other risk factors include a history of} \href{https://en.wikipedia.org/wiki/Head_injury}{head injury}\hl{,} \href{https://en.wikipedia.org/wiki/Clinical_depression}{clinical depression}\hl{, and} \href{https://en.wikipedia.org/wiki/High_blood_pressure}{high blood pressure}\hl{.}
+
+\hl{Current clinical diagnostic protocols for AD are frequently constrained by a pronounced diagnostic lag, as definitive identification often relies upon the manifestation of overt cognitive impairment. By the time these clinical symptoms surface, the underlying neurodegenerative pathology has typically progressed to a state of substantial and irreversible neuronal attrition. While contemporary diagnostic modalities, specifically positron emission tomography (PET) and cerebrospinal fluid (CSF) analysis, demonstrate high sensitivity, their utility for population-wide screening is restricted by prohibitive costs, procedural invasiveness, and limited accessibility. Consequently, there is a critical requirement for non-invasive, objective biomarkers capable of identifying AD in its prodromal or pre-symptomatic phases. Establishing early detection is essential not only for maximizing the efficacy of emerging pharmacological and lifestyle interventions intended to modify disease progression but also for preserving patient autonomy in long-term care planning.}
+
+\subsection{Changes in Brain Structure through AD}
+
+\hl{As it has been stated, Alzheimer's disease (AD) is a neurodegenerative disorder characterized by progressive brain atrophy, with pathological progression accompanied by significant structural alterations in both gray matter (GM) and white matter (WM).}
+
+The neurodegenerative trajectory of Alzheimer's disease is fundamentally characterized by the pathological buildup of amyloid-beta plaques and tau tangles within the brain tissue. Beyond localized synaptic dysfunction, these proteinopathic aggregates are intrinsically linked to progressive white matter (WM) degradation, resulting in a systemic loss of structural integrity.
+
+\hl{While anatomical white matter (WM) alterations in Alzheimer's disease (AD) are well-established, functional WM dysregulation remains rarely investigated.} This deterioration is theorized to be a critical driver of clinical decline because it disrupts large-scale connectivity, effectively severing the long-range communication lines required for global neural integration. As these pathways erode, the brain's capacity to function as a unified, coherent system is fundamentally compromised.
+
+\subsection{Brain Criticality}
+
+\hl{Criticality is hypothesized as a physical mechanism underlying efficient transitions between cortical states and remarkable information-processing capacities in the brain.}
+
+\subsection{Heterogeneity and Griffiths Phase}
+
+% (To be written.)
+
+\subsection{Supercriticality in AD}
+
+\hl{However, recent research suggests that in Alzheimer's disease, there is a shift away from this optimal critical regime toward supercritical dynamics. Brain activity becomes more ordered and overly synchronized as a response mehcanism. This indicates a departure from optimal critical regime.}
+
+% =====================================================================
+\section{Knowledge Gap}
+
+Over the years there have been many papers published regarding Alzheimer's disease. Despite the significant progress on the disease regarding both structural and physiological perspectives, there is an important gap that remains on the integration of these findings with large scale brain dynamics. Most existing studies tend to focus on either the anatomical degradation associated with the disease (such as white matter deterioration and loss of connectivity) or on the concept of criticality in healthy brain networks, where neural systems operate near an optimal balance between rigid order and randomness. However, relatively fewer studies have tried to directly link these two domains.
+
+In particular, there is limited research exploring how disease related alterations in structural connectivity affect the extent of the cortical regime in whole brain models. While recent work suggests that Alzheimer's disease may be associated with a shift toward more ordered, supercritical dynamics; the mechanisms underlying this transition are not yet fully understood. Moreover, it is still unclear whether these structural breakdowns actually restrict the brain's ability to shift between different states of activity. To truly understand Alzheimer's, it is required to move past seeing it as a collection of isolated damaged spots and start viewing it as a systemic failure of the brain's entire communication network.
+
+% =====================================================================
+\section{Problem Statement}
+
+% (To be written.)
+
+% =====================================================================
+\section{Research Question and Hypothesis}
+
+The research question that guided this whole analysis and allowed for a deeper investigation into this topic was the following: \emph{`Does the connectome of Alzheimer's patients exhibit a narrower dynamical range of criticality compared to that of healthy individuals?'}
+
+To address this question, a hypothesis was formulated that the structural degradation in Alzheimer's disease, which implies loss of connectivity and increased heterogeneity into brain dynamics, leads to a significant alteration in the range of coupling parameters for which the system exhibits critical behavior.
+
+As a consequence, it is expected that the Alzheimer's connectome will transition more rapidly into a supercritical regime, in which the synchronization is excessive and the dynamical flexibility is quite reduced. This change in the connectome and brain operation in Alzheimer's disease patients would manifest as a lower threshold in the Griffith's phase. Therefore, this rigid and unstable synchronous state would be observed and characterized by an increase in detrended fluctuation analysis (DFA) exponents, potentially exceeding values of 1.0. Such behavior would indicate a departure from the optimal critical state typically associated with healthy brain function.
+
+% =====================================================================
+\section{Objectives}
+
+The primary objective of this project is to look into the relationship between Alzheimer's disease and alterations in large scale brain dynamics, with a particular focus on the concept of criticality and Griffith's phase. To achieve this, this work aims to determine whether the Alzheimer's connectome exhibits signs of supercritical behavior and reduced dynamical flexibility compared to healthy controls' connectomes.
+
+Moreover, another objective is to identify the threshold at which the system transitions from critical to supercritical dynamics: This involves determining the specific values of the coupling parameter ($K$) at which DFA exponents consistently exceed 1.0 in the Alzheimer's model. Establishing this limit would reveal exactly when the brain begins to fall into the hyper-synchronized patterns seen in Alzheimer's; and help to characterize the dynamical boundaries of the system. Additionally, after mapping out the specific $K$ values where pathological synchronization occurs, it is desired to have a better understanding of the transition of the dynamics from being flexible and fluid, to becoming rigid. Thus, this would help to identify markers for the disease and explain the relationship between structural damage and functional deterioration regarding communication among different regions of the brain.
+
+% =====================================================================
+\section{Methodology}
+
+% (To be written.)
+
+% =====================================================================
+\section{Results}
+
+% (To be written.)
+
+% =====================================================================
+\section{Conclusions}
+
+% (To be written.)
+
+% =====================================================================
+\section*{References}
+\addcontentsline{toc}{section}{References}
+
+\begin{itemize}[leftmargin=*]
+  \item \hl{Tian Y, Tan Z, Hou H, Li G, Cheng A, Qiu Y, Weng K, Chen C, Sun P. Theoretical foundations of studying criticality in the brain. Netw Neurosci. 2022 Oct 1;6(4):1148--1185. doi: 10.1162/netn\_a\_00269. PMID: 38800464; PMCID: PMC11117095.} (\url{https://pmc.ncbi.nlm.nih.gov/articles/PMC11117095/})
+
+  \item \hl{Dokholyan NV, Mohs RC, Bateman RJ. Challenges and progress in research, diagnostics, and therapeutics in Alzheimer's disease and related dementias. Alzheimers Dement (N Y). 2022 Jul 26;8(1):e12330. doi: 10.1002/trc2.12330. PMID: 35910674; PMCID: PMC9322822.} (\url{https://pmc.ncbi.nlm.nih.gov/articles/PMC9322822/})
+
+  \item \hl{Li, Y., Zhou, G., Peng, J. \emph{et al.} White matter dysfunction in Alzheimer's disease is associated with disease-related transcriptomic signatures. \emph{Commun Biol} 8, 820 (2025).} (\url{https://doi.org/10.1038/s42003-025-08177-7})
+
+  \item \hl{Hampel, H., Hardy, J., Blennow, K. \emph{et al.} The Amyloid-$\beta$ Pathway in Alzheimer's Disease. \emph{Mol Psychiatry} 26, 5481--5503 (2021).} (\url{https://doi.org/10.1038/s41380-021-01249-0})
+\end{itemize}
+
+% If you later want to use BibTeX instead, uncomment the following lines
+% and move the references into references.bib:
+% \bibliographystyle{plainnat}
+% \bibliography{references}
 
 \end{document}
